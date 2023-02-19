@@ -48,7 +48,7 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: ${{ secrets.DENO_DEPLOY_PROJECT_NAME }}
+          project: cdn-dlvr
           root: .output
           entrypoint: server/index.ts
           import-map: ./import_map.json
