@@ -7,7 +7,7 @@ const external = process.env.NITRO_PRESET === "deno"
   : [];
 
 export default defineNitroConfig({
-  srcDir: "./src",
+  srcDir: "src",
   routeRules: {
     "/npm/**": { cors: true, headers: { "access-control-allowed-methods": "GET" } },
     "/gh/**": { cors: true, headers: { "access-control-allowed-methods": "GET" } },
